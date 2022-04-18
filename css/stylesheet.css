@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgb(53, 61, 85);
+    border-radius: 8px;
+    margin: 50% auto;
+
+
+}
+
+@media screen {
+    
+}

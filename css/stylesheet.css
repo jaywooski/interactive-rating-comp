@@ -15,11 +15,12 @@
 }
 
 body {
-    
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: var(--very-dark-blue);
     min-height: 99vh;
+    margin: auto;
     
     
 }
@@ -31,12 +32,15 @@ p {
 .main {
     display: flex;
     flex-direction: column;
-    padding: 20px auto;
-    height: fit-content;
+    justify-content: center;
+    padding: 20px 20px;
+    height: 50%;
     background-color: var(--dark-blue);
     border: 0px;
     border-radius: 20px;
     margin: auto;
+    /* width: 75%; 1440px*/
+    width: 275px;
 }
 
 .feedback {
@@ -49,23 +53,30 @@ p {
 
 #star-logo {
     /* display: ; */
+    background-color: var(--dark-blue);
+    padding: 9px 14px;
+    border: 0px;
+    border-radius: 100%;
 }
 
 
 .ratings {
     display: flex;
     justify-content: space-around;
-    border: 0px;
-    border-radius: 100%;
-    background-color: var(--dark-blue);
-    opacity: 60%; 
+    /* border: 0px; */
+    /* border-radius: 100%; */
+    /* background-color: var(--dark-blue); */
+    /* opacity: 60%;  */
     padding: auto;
 }
 
 .ratings p {
     border-radius: 100%;
-    background-color: var(--medium-grey);
-    padding: 20px;
+    text-align: center;
+    border: 0px;
+    background-color: var(--dark-blue);
+    padding: 9px 15px;
+    /* width: 25%; */
 }
 
 .response {
@@ -78,9 +89,13 @@ p {
 
 button {
     background-color: var(--orange);
-    border-radius: 40%;
+    border-radius: 20px;
     border: 0px;
     padding: 6px;
+    width: 100%;
+    margin: 20px auto ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 

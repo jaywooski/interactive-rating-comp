@@ -7,11 +7,14 @@
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
+    --dark-blue-ratings: hsl(210, 16%, 24%);
     --very-dark-blue: hsl(216, 12%, 8%);
 
     /* Primary color */
     --orange: hsl(25, 97%, 53%);
     font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color: white;
 }
 
 body {
@@ -25,36 +28,31 @@ body {
     
 }
 
-p {
-    font-size: 15px; 
-}
-
-.main {
+#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 20px;
-    height: 50%;
+    padding: 20px;
+    height: 360px;
     background-color: var(--dark-blue);
     border: 0px;
     border-radius: 20px;
     margin: auto;
-    /* width: 75%; 1440px*/
     width: 275px;
 }
 
 .feedback {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin: auto;
-    padding: auto;
+    /* justify-content: space-around; */
+    /* margin: auto; */
+    /* padding: 2px; */
 }
 
 #star-logo {
     /* display: ; */
-    background-color: var(--dark-blue);
-    padding: 9px 14px;
+    background-color: var(--dark-blue-ratings);
+    padding: 12px;
     border: 0px;
     border-radius: 100%;
 }
@@ -67,16 +65,29 @@ p {
     /* border-radius: 100%; */
     /* background-color: var(--dark-blue); */
     /* opacity: 60%;  */
-    padding: auto;
+    /* padding: 0px; */
 }
 
 .ratings p {
     border-radius: 100%;
     text-align: center;
     border: 0px;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue-ratings);
     padding: 9px 15px;
-    /* width: 25%; */
+    cursor: pointer;
+}
+
+.ratings p:hover {
+    background-color: var(--orange);
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.ratings p:active {
+    background-color: white;
+    color: var(--orange);
 }
 
 .response {
@@ -91,12 +102,26 @@ button {
     background-color: var(--orange);
     border-radius: 20px;
     border: 0px;
-    padding: 6px;
+    padding: 12px 6px;
     width: 100%;
-    margin: 20px auto ;
+    margin: 12px auto ;
     text-transform: uppercase;
     letter-spacing: 2px;
+    cursor: pointer;
+    color: white;
 
+}
+
+button:hover{
+    background-color: white;
+    color: var(--orange);
+    transition: ease-in-out;
+    transition-duration: 300ms;
+}
+
+button:active {
+    background-color: var(--medium-grey);
+    color: white;
 }
 
 @media screen {

@@ -68,16 +68,18 @@ body {
     /* padding: 0px; */
 }
 
-.ratings p {
+.ratings button {
     border-radius: 100%;
     text-align: center;
     border: 0px;
     background-color: var(--dark-blue-ratings);
-    padding: 9px 15px;
+    padding: 14px 18px ;
     cursor: pointer;
+    color: white;
+    margin: 0px auto 12px;
 }
 
-.ratings p:hover {
+.ratings button:hover {
     background-color: var(--orange);
     color: white;
     transition: ease-in-out;
@@ -85,20 +87,33 @@ body {
     cursor: pointer;
 }
 
-.ratings p:active {
+.ratings button:active {
     background-color: white;
     color: var(--orange);
 }
 
+.ratings button:focus {
+    background-color: var(--medium-grey);
+    color: white;
+}
+
 .response {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.attribution {
-
+#selection {
+    background-color: var(--dark-blue-ratings);
+    padding: 4px;
+    margin: 7px auto 0px;
+    color: var(--orange);
+    border: 0px;
+    width: auto;
+    border-radius: 18px;
 }
 
-button {
+#submitBtn {
     background-color: var(--orange);
     border-radius: 20px;
     border: 0px;
@@ -112,14 +127,14 @@ button {
 
 }
 
-button:hover{
+#submitBtn:hover{
     background-color: white;
     color: var(--orange);
     transition: ease-in-out;
     transition-duration: 300ms;
 }
 
-button:active {
+#submitBtn:active {
     background-color: var(--medium-grey);
     color: white;
 }

@@ -31,7 +31,7 @@ function ratingHandler(e) {
     if(e.target != submitBtn) {
         const rating = e.target.innerHTML;
         console.log(rating);
-        sessionStorage.setItem('myRate', JSON.stringify(rating));
+        sessionStorage.setItem('myRate', rating);
         return rating;
         
     }

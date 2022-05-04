@@ -50,7 +50,6 @@ body {
 }
 
 #star-logo {
-    /* display: ; */
     background-color: var(--dark-blue-ratings);
     padding: 12px;
     border: 0px;
@@ -61,11 +60,6 @@ body {
 .ratings {
     display: flex;
     justify-content: space-around;
-    /* border: 0px; */
-    /* border-radius: 100%; */
-    /* background-color: var(--dark-blue); */
-    /* opacity: 60%;  */
-    /* padding: 0px; */
 }
 
 .ratings button {
@@ -137,8 +131,4 @@ body {
 #submitBtn:active {
     background-color: var(--medium-grey);
     color: white;
-}
-
-@media screen {
-    
 }

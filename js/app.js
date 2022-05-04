@@ -36,7 +36,6 @@ function ratingHandler(e) {
         
     }
     
-    
 }
 
 

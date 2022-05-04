@@ -1,6 +1,10 @@
 const submitBtn = document.getElementById("submitBtn"); 
 const main = document.getElementById("main");
-const ratings = document.querySelector(".ratings");
+const one = document.querySelector("#one");
+const two = document.querySelector("#two");
+const three = document.querySelector("#three");
+const four = document.querySelector("#four");
+const five = document.querySelector("#five");
 
 function renderThankYou() {
     main.innerHTML = "";
@@ -19,43 +23,46 @@ function renderThankYou() {
     
 }
 
-function ratingHandler() {
-    console.log("Successful");
+function ratingHandler(rating) {
+    rating = [ one, two, three, four, five ];
     
-    var childrenCount = ratings.childElementCount;
+    var childs = one.innerHTML;
+    console.log(childs);
 
-    var childrenVal = ratings.children;
-
-    console.log(childrenCount);
-    console.log(childrenVal);
-
-
-    var rate = ratings.innerHTML;
-    switch (rate) {
-        case "<p>1</p>":
-            console.log("1")
-            break;
-        case "<p>2</p>":
-            return "2"
-            break;
-        case "<p>3</p>":
-            return "3"
-            break;
-        case "<p>4</p>":
-            return "4"
-            break;
-        case "<p>5</p>":
-            return "5"
-            break;
-        default:
-            // console.log("not detecting child elements")
-            break;
+    for (let i = 0; i < rating.length; i++) {
+        
+        switch (rating[i]){ 
+            case one:
+                console.log("1")
+                break;
+            case two:
+                return "2"
+                break;
+            case three:
+                return "3"
+                break;
+            case four:
+                return "4"
+                break;
+            case five:
+                return "5"
+                break;
+            default:
+                console.log("not detecting child elements")
+                break;
+        }
+        
     }
+
     
 }
 
 // ratingHandler();
 
-ratings.addEventListener('click', ratingHandler)
+one.addEventListener('click', ratingHandler)
+two.addEventListener('click', ratingHandler)
+three.addEventListener('click', ratingHandler)
+four.addEventListener('click', ratingHandler)
+five.addEventListener('click', ratingHandler)
 
 submitBtn.addEventListener('click', renderThankYou)
